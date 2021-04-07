@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/background_pin"
+android:orientation="vertical"
+tools:context=".login.RegisterFragment">
+
+
+
+
+
+
+
+<androidx.cardview.widget.CardView
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp"
+    android:paddingTop="10dp"
+    android:layout_marginTop="70dp"
+    android:layout_marginBottom="25dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    app:cardElevation="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+
+        android:paddingBottom="50dp"
+        android:layout_marginTop="10dp">
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input_Rusername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            app:errorEnabled="true">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="username"
+                android:textStyle="bold|italic"
+                android:inputType="textEmailAddress"
+                android:textSize="15sp"
+
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input_Remail"
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            app:errorEnabled="true">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:textStyle="bold|italic"
+                android:inputType="textEmailAddress"
+                android:layout_margin="5dp"
+                android:textSize="15sp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input_Rpassword"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            app:errorEnabled="true"
+            app:passwordToggleEnabled="true">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:layout_margin="5dp"
+                android:textStyle="bold|italic"
+
+                android:inputType="textPassword"
+                android:textSize="15sp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input_Rconpassword"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            app:errorEnabled="true"
+            app:passwordToggleEnabled="true">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Confirm Password"
+
+                android:layout_margin="5dp"
+                android:textStyle="bold|italic"
+                android:inputType="textPassword"
+                android:textSize="15sp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+
+
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/card_view"
+    android:layout_alignLeft="@id/card_view"
+    android:layout_alignRight="@id/card_view"
+    android:elevation="10dp"
+    android:layout_marginTop="-55dp"
+    android:layout_marginLeft="35dp"
+    android:layout_marginRight="35dp"
+    >
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_design"
+
+
+        android:elevation="10dp"
+        android:text="Sign up"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimaryDark" />
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>
